@@ -37,7 +37,7 @@ int main(int argc, const char *argv[])
 
     printf("%s\n", argv[1]);
     TTF_Font *font;
-    font = TTF_OpenFont("himalaya.ttf", 30);
+    font = TTF_OpenFont(argv[1], 30);
 
     if(!font) {
         printf("%s\n", TTF_GetError());
