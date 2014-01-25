@@ -1,5 +1,5 @@
-SDL_LIB = -L/usr/lib64 -Wl,-rpath,/usr/lib64 -lSDL2 -lpthread -lSDL_ttf
-SDL_INCLUDE = -I/usr/include/SDL2 -D_REENTRANT
+SDL_LIB = `sdl2-config --libs` -lSDL2_ttf
+SDL_INCLUDE = `sdl2-config --cflags`
 LDFLAGS = -Wall -c $(SDL_INCLUDE)
 BIN = sdl2-font_test
 
