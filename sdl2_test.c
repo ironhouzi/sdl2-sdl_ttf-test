@@ -1,9 +1,6 @@
 #include <stdlib.h>
-#include <wchar.h>
 #include <stdio.h>
-#include <locale.h>
 #include <SDL2/SDL.h>
-#include <SDL2/SDL_video.h>
 #include <SDL2/SDL_ttf.h>
 
 int main(int argc, const char *argv[])
